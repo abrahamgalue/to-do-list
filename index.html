@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To Do List - @abrahamgalue</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <!-- styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <button class="btn-theme" name="button to switch theme">
+    <i class="fas fa-sun"></i>
+  </button>
+  <section class="section-center">
+    <!-- form -->
+    <form class="todo-form">
+      <p class="alert"></p>
+      <h3>To-do list</h3>
+      <div class="form-control">
+        <input type="text" name="todo" id="todo" placeholder="Write here..." autoComplete='off' />
+        <button name="submit button" type="submit" class="submit-btn">
+          <i class="fas fa-plus"></i>
+        </button>
+      </div>
+    </form>
+    <!-- list -->
+    <div class="todo-container">
+      <div class="todo-list"></div>
+      <!-- button -->
+      <button name="clear items button" type="button" class="clear-btn">clear items</button>
+    </div>
+  </section>
+  <!-- javascript -->
+  <script src="app.js"></script>
+</body>
+
+</html>
