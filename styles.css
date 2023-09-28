@@ -37,8 +37,10 @@ Variables
   --clr-white: #fff;
   --clr-red-dark: hsl(0, 67%, 44%);
   --clr-red-light: hsl(0, 78%, 93%);
-  --clr-green-dark: hsl(125, 67%, 44%);
-  --clr-green-light: hsl(125, 71%, 66%);
+  --clr-green-dark: #2e6503;
+  --clr-green-light: #64d045;
+  --clr-yellow-light: #f9be32;
+  --clr-yellow-dark: #9a581b;
   /* red u;ed for danger alert */
   --clr-red-dark-danger: hsl(0, 67%, 44%);
   --clr-red-light-danger: hsl(0, 78%, 93%);
@@ -358,7 +360,7 @@ Todo List
 }
 
 .edit-btn,
-.delete-btn {
+.complete-btn {
   background: transparent;
   border-color: transparent;
   cursor: pointer;
@@ -369,7 +371,7 @@ Todo List
 
 .edit-btn {
   color: transparent;
-  background: var(--clr-green-dark);
+  background: var(--clr-yellow-light);
   border-radius: 2rem;
   font-size: 0.70rem;
   height: 20px;
@@ -377,19 +379,19 @@ Todo List
 }
 
 .edit-btn:hover {
-  color: var(--clr-green-light);
+  color: var(--clr-yellow-dark);
 }
 
-.delete-btn {
+.complete-btn {
   color: transparent;
-  background: var(--clr-red-dark);
+  background: var(--clr-green-light);
   border-radius: 2rem;
   height: 20px;
   width: 20px;
 }
 
-.delete-btn:hover {
-  color: var(--clr-red-light);
+.complete-btn:hover {
+  color: var(--clr-green-dark);
 }
 
 .clear-btn {
@@ -402,7 +404,8 @@ Todo List
   border-color: transparent;
   color: var(--clr-red-light);
   margin: 0 auto;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
+  font-weight: 600;
   letter-spacing: var(--spacing);
   cursor: pointer;
   transition: var(--transition);

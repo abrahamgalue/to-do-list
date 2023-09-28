@@ -63,15 +63,15 @@ function addItem(e) {
               <button type="button" class="edit-btn">
                 <i class="fas fa-pen"></i>
               </button>
-              <!-- delete btn -->
-              <button type="button" class="delete-btn">
-                <i class="fas fa-times"></i>
+              <!-- complete btn -->
+              <button type="button" class="complete-btn">
+                <i class="fas fa-check"></i>
               </button>
             </div>
           `;
     // add event listeners to both buttons;
-    const deleteBtn = element.querySelector(".delete-btn");
-    deleteBtn.addEventListener("click", deleteItem);
+    const completeBtn = element.querySelector(".complete-btn");
+    completeBtn.addEventListener("click", completeItem);
     const editBtn = element.querySelector(".edit-btn");
     editBtn.addEventListener("click", editItem);
 
@@ -121,9 +121,9 @@ function clearItems() {
   localStorage.removeItem("list");
 }
 
-// delete item
+// complete item
 
-function deleteItem(e) {
+function completeItem(e) {
   const element = e.currentTarget.parentElement.parentElement;
   const id = element.dataset.id;
 
@@ -234,15 +234,15 @@ function createListItem(id, value) {
               <button type="button" class="edit-btn">
                 <i class="fas fa-pen"></i>
               </button>
-              <!-- delete btn -->
-              <button type="button" class="delete-btn">
-                <i class="fas fa-times"></i>
+              <!-- complete btn -->
+              <button type="button" class="complete-btn">
+                <i class="fas fa-check"></i>
               </button>
             </div>
           `;
   // add event listeners to both buttons;
-  const deleteBtn = element.querySelector(".delete-btn");
-  deleteBtn.addEventListener("click", deleteItem);
+  const completeBtn = element.querySelector(".complete-btn");
+  completeBtn.addEventListener("click", completeItem);
   const editBtn = element.querySelector(".edit-btn");
   editBtn.addEventListener("click", editItem);
 
