@@ -370,28 +370,34 @@ Todo List
 }
 
 .edit-btn {
-  color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: var(--clr-yellow-light);
   border-radius: 2rem;
   font-size: 0.70rem;
   height: 20px;
+  color: var(--clr-yellow-dark);
   width: 20px;
 }
 
 .edit-btn:hover {
-  color: var(--clr-yellow-dark);
+  color: transparent;
 }
 
 .complete-btn {
-  color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: var(--clr-green-light);
+  color: var(--clr-green-dark);
   border-radius: 2rem;
   height: 20px;
   width: 20px;
 }
 
 .complete-btn:hover {
-  color: var(--clr-green-dark);
+  color: transparent
 }
 
 .clear-btn {
