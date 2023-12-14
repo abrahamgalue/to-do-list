@@ -8,7 +8,7 @@
 
 > 🧩 Aquí puedes ver su [**Live Demo.**](https://to-do-list-abraham.netlify.app/)
 
-![vista-previa](./public/preview/01-page-preview.png)
+![vista-previa](./public/preview/01-page-preview.jpg)
 
 ## 🚀 Descripción
 
